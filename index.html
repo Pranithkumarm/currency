@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="curr.css">
+    <script src="curr.js" defer></script>
+
+</head>
+<body>
+
+<div class="converter">
+    <h2 style="color: #3498db;">Currency Converter</h2>
+    <label for="amount" style="color: rgb(243, 241, 240); text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); font-weight: bold;">Amount:</label>
+    <input type="number" id="amount" placeholder="Enter amount">
+
+    <label for="fromCurrency" style="color: rgb(245, 243, 243); text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); font-weight: bold;">From Currency:</label>
+    <select id="fromCurrency">
+        <option value="inr">INR</option>
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+        <option value="gbp">GBP</option>
+        <option value="aud">AUD</option>
+        <option value="aed">AED</option>
+    </select>
+
+    <label for="toCurrency" style="color:rgb(244, 239, 238); text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); font-weight: bold;">To Currency:</label>
+    <select id="toCurrency">
+        <option value="inr">INR</option>
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+        <option value="gbp">GBP</option>
+        <option value="aud">AUD</option>
+        <option value="aed">AED</option>
+    </select>
+
+    <button onclick="convertCurrency()">Convert</button>
+
+    <h3 id="result" style="color: #d84939; text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); font-weight: bold;"></h3>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
